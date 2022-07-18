@@ -1,0 +1,118 @@
+Após uma prova de vestibular, uma escola quer identificar quantos dos seus alunos foram aprovados em cada turma de formandos. Ela quer saber qual aluno teve a maior nota e de qual turma ele é. Nessa escola, há quatro turmas (A, B, C e D) com vinte e cinco alunos cada.
+
+Elabore um algoritmo que solicite o nome e a nota do vestibular aos alunos. Depois, informe quantos deles foram aprovados, de que turma são, qual a maior nota em cada turma e qual aluno teve a maior nota de todas.
+
+Para que o aluno seja aprovado no vestibular, ele deverá obter nota maior ou igual a 7.
+
+ATENÇÃO: As notas por turma não podem se repetir
+
+
+QUANTOS APROVADOS
+
+QUAL A MAIOR NOTA GERAL E QUAL TURMA
+
+TURMAS A, B, C, D
+
+MÁXIMO DE ALUNOS POR TURMA 25
+
+
+
+INICIO
+
+ 
+ nomeAluno:caracter
+ notaAluno:real
+ turmaAluno:caracter
+ turmaA:inteiro
+ turmaB:inteiro
+ turmaC:inteiro
+ turmaD:inteiro
+ notaA:real
+ notaB:real
+ notaC:real
+ notaD:real
+ maiorNotaA:real
+ maiorNotaB:real
+ maiorNotaC:real
+ maiorNotaD:real
+ maiorNotageral:real
+ qtdAprovados:inteiro
+ notaDigitada
+
+
+
+   nomeAluno = escreva('NOME DO ALUNO')  
+
+   leia(nomeAluno)
+
+      
+   notaAluno = escreva ('qual a nota do aluno')
+
+   leia(notAluno)
+
+   turmaAluno = escreva ('digite sua turma')
+   leia (turmaAluno)
+
+  
+     aluno <- 1
+     enquanto (aluno <= 100)faça
+     escreva ('digite seu nome')
+     leia (nomeAluno)
+     escreva ('digite sua nota')
+     leia (notaAluno)
+     se (notaAluno >= 7) então
+     qtdAprovados <- qtdAprovados +1
+     escreva ('digite sua turma)
+     leia (turmaAluno)
+     se (aluno = 1) então
+     MaiorNotageral <- NotaAluno
+     fimse
+    fimse 
+       
+
+       se (nota > maiorNotageral) então
+       maiorNotageral <- nota
+       fimse
+
+         se (turma = turmaA) então
+         turmaA <- turmaA +1 
+         MaiorNotaA <- maiorNotageral
+         senão
+         se (turma = turmaB) então
+         turmaB <- turmaB +1
+         maiorNotaB <- maiorNotageral
+         senão
+         se(turma = turmaC)entao
+         turmaC <- turmaC + 1 
+         maiorNotaC <- maiorNotageral
+         senão
+         se(turma = turmaD)entao
+         turmaD <- turmaD + 1
+         maiorNotaD <- maiorNotageral
+         fimse
+         aluno <- aluno +1
+         fimenquanto
+        fimse
+       fimse
+      fimse
+     fimse
+
+          
+           se (aluno=101) então
+           escreva (qtdAprovados "foram aprovados")
+           escreva(turmaA, 'alunos da turma A foram aprovados')
+           escreva(turmaB, 'alunos da turma B foram aprovados')
+           escreva(turmaC, 'alunos da turma C foram aprovados')
+           escreva(turmaD, 'alunos da turma D foram aprovados')
+           escreva( MaiorNotaGeral 'obteve a maior nota geral')
+           escreva('O aluno que obteve a maior nota da turma A foi', maiorNotaA)
+           escreva('O aluno que obteve a maior nota da turma B foi', maiorNotaB)
+           escreva('O aluno que obteve a maior nota da turma C foi', maiorNotaC)
+           escreva('O aluno que obteve a maior nota da turma D foi', maiorNotaD)
+           fimse
+
+
+
+
+                        
+   
