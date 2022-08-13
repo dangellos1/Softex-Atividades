@@ -1,0 +1,29 @@
+Faça uma função calculadora de dois números com três parâmetros: os dois primeiros serão os números da operação e o terceiro será a entrada que definirá a operação a ser executada. Considera a seguinte definição:
+1. Soma
+2. Subtração
+3. Multiplicação
+4. Divisão
+
+Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
+
+
+a = int(input("Priemiro número: "))
+b = int(input("segundo número : "))
+operação = int (input("Número da operação: "))
+
+def calculadora (a, b, operação):
+    if operação == 1:
+        return  a + b
+
+    elif operação == 2:
+        return  a - b 
+        
+    elif operação == 3:
+        return  a * b 
+       
+    elif operação == 4:
+        return  a / b
+        
+    else: return  0
+    
+print ("o resultado foi: " + str (calculadora (a,b,operação)))
