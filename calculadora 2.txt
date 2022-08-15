@@ -24,8 +24,11 @@ def calculadora():
       print ('1- soma; 2- subtração; 3- multiplicação; 4- divisão; 0- sair ')
       op = int(input())
     
+      if (op == 0):
+         print ("Sistema encerrado.")
+         break
     
-      if (op < 5 and op > 0):
+      elif (op < 5 and op > 0):
         valor1 = int(input ("Informe o primeiro valor da operação: "))
         valor2 = int(input("Informe o segundo valor da operação: "))
         
@@ -41,14 +44,11 @@ def calculadora():
           multiplicação = valor1 * valor2
           print ("o resultado foi: " + str(multiplicação))
           
-      elif (op == 4):
+      elif (op == 4) and valor2 != 0:
           divisão = valor1 / valor2
           print ("o resultado foi" + str(divisão))
-          
-      elif (op == 0):
-         print ("Sistema encerrado.")
-         break
-    
+     
+      
     
       else:
           print ("Essa opção não existe")
