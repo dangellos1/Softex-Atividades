@@ -21,40 +21,44 @@ def calculadora():
     op = "x"
     while op != 0:
      try:
-      print ('Escolha o número da operação')
-      print ('1- soma; 2- subtração; 3- multiplicação; 4- divisão; 0- sair ')
-      op = int(input())
+       print ('Escolha o número da operação')
+       print ('1- soma; 2- subtração; 3- multiplicação; 4- divisão; 0- sair ')
+       op = int(input())
     
-      if (op == 0):
-         print ("Sistema encerrado.")
-         break
+       if (op == 0):
+          print ("Sistema encerrado.")
+          break
     
-      elif (op < 5 and op > 0):
-        valor1 = int(input ("Informe o primeiro valor da operação: "))
-        valor2 = int(input("Informe o segundo valor da operação: "))
+       elif (op < 5 and op > 0):
+         valor1 = int(input ("Informe o primeiro valor da operação: "))
+         valor2 = int(input("Informe o segundo valor da operação: "))
         
-      if (op == 1):
-        soma = valor1 + valor2
-        print ("O resultado foi: " + str (soma))
+       if (op == 1):
+         soma = valor1 + valor2
+         print ("O resultado foi: " + str (soma))
         
-      elif (op == 2):
-          subtração = valor1 - valor2
-          print ("o resultado foi: " + str (subtração))
+       elif (op == 2):
+           subtração = valor1 - valor2
+           print ("o resultado foi: " + str (subtração))
           
-      elif (op == 3):
-          multiplicação = valor1 * valor2
-          print ("o resultado foi: " + str(multiplicação))
+       elif (op == 3):
+           multiplicação = valor1 * valor2
+           print ("o resultado foi: " + str(multiplicação))
           
-      elif (op == 4):
-          divisão = valor1 / valor2
-          print ("o resultado foi" + str(divisão))
-     
+       elif (op == 4):
+            if (valor2 != 0):
+               divisão = valor1 / valor2
+               print ("o resultado foi" + str(divisão))
+              
+            else:
+               raise Exception ("Divisão por zero não existe")
       
-      else:
-          print ("Essa operação não existe")
+       else:
+           print ("Essa operação não existe")
+          
      except Exception as e:
-       print ("      erro      ")
-       print (("----> ") + str (e) + (" <----"))
+        print ("      erro      ")
+        print (("----> ") + str (e) + (" <----"))
       
       
 calculadora()
