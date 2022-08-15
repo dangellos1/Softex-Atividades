@@ -51,9 +51,10 @@ def calculadora():
      
       
       else:
-          print ("Essa opção não existe")
-     except:
+          print ("Essa operação não existe")
+     except Exception as e:
        print ("      erro      ")
+       print (("----> ") + str (e) + (" <----"))
       
       
 calculadora()
