@@ -1,0 +1,26 @@
+Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021. A partir dessas informações, o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+
+Caso o usuário não digite um número ou apareça um inválido no campo do ano, o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+
+
+
+
+
+nome = input("Digite seu nome: ")
+
+op = "y"
+while op != "x":
+ try:
+  anoNasci = int(input("digite sua data de nascimento: "))
+  if (anoNasci > 1921 and anoNasci < 2022):
+    print (nome + ", você fez ou fará " + str( 2022 - anoNasci) + " anos neste ano ")
+    break
+  elif anoNasci < 1922 and anoNasci > 2021:
+      print ("O ano de nascimento tem que ser igual ou maior que 1922")
+      op = "y"
+  elif anoNasci > 2021:
+      print ("A data de nascimento tem que ser igual ou menor que 2021")
+      op = "y"
+ except:
+     print ("Erro. Data de nascimento invalida.")
+    
