@@ -1,0 +1,57 @@
+candidatoX = 0
+candidatoY = 0
+candidatoZ = 0
+nulo = 0
+candidatoX = 0
+candidatoY = 0
+candidatoZ = 0
+nulo = 0
+voto = ""
+
+def votacao():
+    global candidatoY
+    global candidatoZ
+    global nulo
+    global candidatoX
+    if voto == "889" or voto == "847" or voto == "515" or voto == "":
+        if voto == "889":
+            candidatoX = candidatoX + 1
+        elif voto == "847":
+            candidatoY = candidatoY + 1
+        elif (voto == "515"):
+            candidatoZ = candidatoZ + 1
+        else: nulo = nulo + 1
+    else:
+        print("digite um voto válido")
+
+
+def resultado():
+    print("x= " + str(candidatoX))
+    print(candidatoY)
+    print(candidatoZ)
+    print(nulo)
+
+
+op = "x"
+while op != 0:
+    print("candidato_X => 889 candidato_Y => 847candidato_Z => 515 branco => 0")
+    print("digite o numero do candidato")
+    votacao()
+    voto = input()
+
+
+
+    if (voto == "fim"):
+        print(resultado())
+        break
+
+def vencedor():
+    if candidatoX > candidatoY and candidatoX > candidatoZ and candidatoX > nulo:
+        print ("candidadto X venceu a eleição")
+    elif candidatoY > candidatoZ and candidatoY > candidatoX and candidatoY > nulo:
+        print ("candidato y venceu a eleição")
+    elif candidatoZ > candidatoX and candidatoZ > candidatoY and candidatoZ > nulo:
+        print ("candidato z venceu a eleição" )
+    else:
+        print ("Votos nulos foram a maioria")
+vencedor()
