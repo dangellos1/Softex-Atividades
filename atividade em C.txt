@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+//void* malloc(size_t quantidade de bytes);
+
+void escreve (int *numeros, int n) {
+ int i; printf("%d, ', numeros[i]); printf("\n");
+ printf("Numeros lidos: ");
+ for(i = 0; i < n; i++)
+ printf(%d, ",numeros[i]);
+ print("\n");
+}
+
+int main(){
+
+int numeros;
+
+int n, i;
+
+printf("Quantidade de numeros: "); scanf("%d", &n);
+
+numeros = malloc(n* sizeof(int));
+
+if (numeros == NULL{
+ printf("Erro na alocação de memória!\n");
+ exit(1);
+
+}
+
+for(i = 0; i < n; i++) {
+
+printf("Numero %d: ", i);
+scanf("%d", &numeros[i]);
+
+}
+
+escreve (numeros,n);
+
+free (numeros);
