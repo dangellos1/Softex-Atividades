@@ -8,6 +8,8 @@ O método deve:
 a = complex(5, 3)
 b = complex(7, 9)
 c = complex(8, 9)
+
+
 def real_img():
     soma = a + b + c
     mult = a*b*c
@@ -24,5 +26,7 @@ def real_img():
     print('='*30)
     print('o resultado da divisão é', div)
     print('o numero real da divisão é', div.real, 'e o numero imaginario é', div.imag)
+    
+    
 real_img()
 
