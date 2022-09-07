@@ -1,0 +1,20 @@
+Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.
+
+
+print('transformar letras em minusculas')
+nome1 = "Leonardo Da Vinci"
+print(nome1.lower())
+
+
+print("trasnformar nome em maisculo")
+nome2 = "D'angellos de Lucas"
+print(nome2.upper())
+
+
+print("saber se o nome é escrito todo em maiusculo")
+nome3 = "Sant'ago D'lucas"
+print(nome3.isupper())
+
+
+print("contar numero de letras do nome1")
+print(len(nome1))
