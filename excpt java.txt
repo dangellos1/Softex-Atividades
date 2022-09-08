@@ -1,0 +1,34 @@
+Crie uma situação em que ocorra uma exceção dentro de um código. Utilize try/catch para realizar a captura e tratamento dessa exceção. 
+
+package Excecao;
+
+public class MainProgram {      
+
+	/**
+	 * @param <Financiamento>
+	 * @param args
+	 */
+	public static <Financiamento> void main(String[] args) {   
+		final double valorTotal = 77999.0;
+		final double entrada = 157.0;
+		int parcelas = 8;
+		 
+	    try {                     
+			final Financiamento f = new Financiamento(valorTotal, entrada, parcelas);
+		    System.out.println(f.prestacao());
+		}
+	    catch (final RuntimeException e) {     //tratamento da exceção caso ocorra
+	    	System.out.println(e.getMessage());
+	   
+	    }	
+     }
+    public MainProgram() {
+    }
+
+    @Override
+    public String toString() {
+        return "MainProgram []";
+    }
+  
+	 
+}
