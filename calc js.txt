@@ -1,0 +1,21 @@
+
+
+let n1 = parseFloat(prompt("digite o primeiro numero"));
+let n2 = parseFloat(prompt("digite o segundo numero"));
+let op = prompt("escolha a op: +,-,*,/");
+
+if(op === "+"){
+    console.log(n1 + n2);
+}
+
+    else if (op === "-"){
+        console.log(n1 - nu2)
+    }
+
+    else if(op === "*"){
+        console.log(n1 * n2)
+    }
+
+    else if(op === "/"){
+        console.log(n1 / n2)
+    }
