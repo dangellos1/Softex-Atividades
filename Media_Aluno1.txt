@@ -1,0 +1,11 @@
+var nota1 = Number(prompt("informe a primeira nota"))
+var nota2 = Number(prompt("informe a segunda nota"))
+var nota3 = Number(prompt("informe a terceira nota"))
+var media = (nota1 + nota2 + nota3)/3
+console.log("A sua media média foi: ", media)
+var resultado = 0
+
+if (media < 7)
+console.log("Aluno não aprovado")
+else
+console.log("Aluno aprovado")

@@ -1,0 +1,8 @@
+
+
+var nota1 = parseFloat(prompt("Informe a primeira nota"))
+var nota2 = parseFloat(prompt("Informe a segunda nota"))
+
+
+var notaFaltante = (21 - (nota1 + nota2))
+console.log("O Aluno precisa tirar ", notaFaltante, " para ser aprovado")
