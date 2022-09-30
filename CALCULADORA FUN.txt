@@ -1,0 +1,30 @@
+
+
+
+
+
+
+function inicio (){
+    console.log("INICIANDO CALCULADORA");
+}
+
+function adição(num_1, num_2){
+    let resultado = num_1 + num_2; 
+    console.log(resultado);
+    return resultado;
+}
+
+let divisão = (num_1, num_2) =>{
+    resultado2 = num_1 / num_2;
+    console.log(resultado2);
+    
+}
+
+
+inicio();
+
+console.log("RESULTADO DA SOMA:");
+adição(3, 99999997);
+
+console.log("RESULTADO DA DIVISÃO");
+divisão(90, 10);
