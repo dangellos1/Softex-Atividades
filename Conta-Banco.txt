@@ -20,11 +20,11 @@ function Banco(conta, saldo, tipoDeConta, agencia){
     }
 
     let deposito = function(valorU){
-        this.valorU = valorU
+        this.valorD = valorD
     }
     
-    let saque = function(valorI){
-        this.valorI = valorI
+    let saque = function(valorS){
+        this.valorS = valorS
     }
     
     let numCont = function(){
